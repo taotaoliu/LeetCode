@@ -18,10 +18,17 @@ class Solution:
                 num += 1
         return num
 
-
-
+    def hammingDistanceSolution(self, x, y):
+        num = 0
+        z = int(x ^ y)
+        while z != 0:
+            if z % 2 == 1:
+                num += 1
+            z = int(z / 2)
+        return num
 
 s = Solution()
-print(s.hammingDistance(1, 4))
+print(s.hammingDistance(3, 8))
+print(s.hammingDistanceSolution(3, 8))
 
 

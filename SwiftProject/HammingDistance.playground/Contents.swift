@@ -5,6 +5,7 @@ import UIKit
 var str = "Hello, playground"
 
 class Solution {
+    //常规想法耗时多，浪费资源多
     func hammingDistance(_ x: Int, _ y: Int) -> Int {
         var num: Int = 0
         var n_x = String(x, radix:2)
@@ -38,9 +39,24 @@ class Solution {
         }
         return num
     }
+    
+    //此解法
+    func hanmingDisctanceSolution(_ x: Int, _ y: Int) -> Int {
+        var num: Int = 0
+        var z: Int = x ^ y
+        while z != 0 {
+            if z % 2 == 1 {
+                num += 1
+            }
+            z = z / 2
+        }
+        return num
+    }
 }
 
 let s = Solution()
-let n = s.hammingDistance(3, 18)
+let n = s.hammingDistance(1, 4)
+let m = s.hanmingDisctanceSolution(1, 4)
 print(n)
+print(m)
 

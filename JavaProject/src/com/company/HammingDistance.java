@@ -24,12 +24,23 @@ public class HammingDistance {
         System.out.print("x: " + n_x + '\n');
         System.out.print("y: " + n_y + '\n');
 
-
         for(int i = 0; i < n_x.length(); i ++) {
             if (n_x.charAt(i) != n_y.charAt(i)) {
                 num += 1;
             }
         }
         return num;
+    }
+
+    public int hammingDistanceSolution(int x, int y) {
+        int num = 0;
+        int z = x ^ y;
+        while (z != 0) {
+            if (z % 2 == 1) {
+                num += 1;
+            }
+            z = z / 2;
+        }
+        return  num;
     }
 }

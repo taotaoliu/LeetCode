@@ -13,8 +13,13 @@ public class Main {
 
         //Hamming Distance
         HammingDistance h = new HammingDistance();
-        int d = h.hammingDistance(15, 3);
+        int d = h.hammingDistance(1, 4);
         System.out.print(d);
+        System.out.print('\n');
+
+        int d1 = h.hammingDistanceSolution(1, 4);
+        System.out.print(d);
+        System.out.print('\n');
 
     }
 }
