@@ -20,10 +20,8 @@ public class HammingDistance {
             }
             n_x = n_x_buffer.toString();
         }
-
         System.out.print("x: " + n_x + '\n');
         System.out.print("y: " + n_y + '\n');
-
         for(int i = 0; i < n_x.length(); i ++) {
             if (n_x.charAt(i) != n_y.charAt(i)) {
                 num += 1;

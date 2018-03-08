@@ -9,10 +9,8 @@ class Solution:
         else:
             for _ in range(len(n_y) - len(n_x)):
                 n_x = '0' + n_x
-
         print("x: %s" % n_x)
         print("y: %s" % n_y)
-
         for i in range(len(n_x)):
             if n_x[i: i+1] != n_y[i: i+1]:
                 num += 1

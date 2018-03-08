@@ -7,7 +7,6 @@ class Solution:
                     i += 1
         return i
 
-
 # J = "aA"
 # S = "aAAbbbb"
 J = "zZ"
