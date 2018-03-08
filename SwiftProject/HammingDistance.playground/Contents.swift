@@ -40,7 +40,7 @@ class Solution {
         return num
     }
     
-    //此解法
+    //此解法更简单
     func hanmingDisctanceSolution(_ x: Int, _ y: Int) -> Int {
         var num: Int = 0
         var z: Int = x ^ y
